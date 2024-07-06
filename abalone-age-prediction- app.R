@@ -1,4 +1,4 @@
-data1<-read.table("C:/Users/adsiz/Desktop/NotLonely.final.project/abalone.txt",header = F,sep = ",") 
+data1<-read.table("abalone.txt",header = F,sep = ",") 
 colnames(data1)<-c("Sex","Length","Diameter","Height","Whole_weight","Shucked_weight","Viscera_weight","Shell_weight","Rings")
 library(magrittr)
 attach(data1)
@@ -7,13 +7,13 @@ library(shinythemes)
 library(Hmisc)
 
 # Erkan Akbaba - 1915289
-# ??mer Ads??z - 2290443
-# Rukiye Esma ??zcan - 2146264
+# Omer Adsiz - 2290443
+# Rukiye Esma Ozcan - 2146264
 # Selendeniz KD1zD1lD1rmak - 2146207
 
 ui <- fluidPage(
     shinythemes::themeSelector(), #Theme selector.
-    # <--- Add this somewhere in the UI
+    
     navbarPage(
         
         "FIND MY ABALONE'S AGE",
